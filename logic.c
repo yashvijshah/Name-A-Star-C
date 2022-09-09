@@ -1,3 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <float.h>
+#include "star.h"
+
+//a counter to create unique star numbers (identifiers)
+int SerNum=0;
+//the actual number of stars in the universe
+int numStars = 0;
+//the number of named pairs
+int numPairs = 0;
+
+Star *stars[MaxStar];		
+Pair *pairs[MaxPair];	
+
+
 //This function is used to find a star through its coordinates.
 //The first two parameters are the coordinates of the star we are looking for.
 //The 3rd parameter to this function is a very small number (e.g. 0.00000001) called the tolerance.
